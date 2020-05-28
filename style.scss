@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+$font: 'Roboto', sans-serif;
+$orange: #f06b3f;
+$blue: #81acbd;
+$grey: #efeeee;
+$black: #414242;
+
+%fonts {
+    font-family: $font;
+    font-size: 1rem;
+}
+
+
+header  {
+    background: $orange;
+}
+
+#content    {
+    @extend %fonts;
+    min-height: 500px;
+    
+    section p:first-of-type::first-letter {
+        font-size: 2rem;
+    }
+}
+
+.very-strong    {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+footer  {
+    @extend %fonts;
+    background: $black;
+    min-height: 50px;
+    color: $grey;
+    padding-top: 0.75rem;
+
+    address {
+        font-size: 0.75rem;
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 750px)   {
+    footer  {
+        background: $blue;
+    }
+}

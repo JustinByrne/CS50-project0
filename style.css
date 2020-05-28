@@ -1,3 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+footer, #content {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
 
+header {
+  background: #f06b3f;
+}
+
+#content {
+  min-height: 500px;
+}
+#content section p:first-of-type::first-letter {
+  font-size: 2rem;
+}
+
+.very-strong {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+footer {
+  background: #414242;
+  min-height: 50px;
+  color: #efeeee;
+  padding-top: 0.75rem;
+}
+footer address {
+  font-size: 0.75rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    background: #81acbd;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
